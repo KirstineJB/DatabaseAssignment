@@ -39,6 +39,9 @@ namespace StudentManagement
                 .HasForeignKey(c => c.InstructorId)
                 .OnDelete(DeleteBehavior.SetNull);
 
+            modelBuilder.Entity<Course>()
+            .Property(c => c.Credits)
+            .HasPrecision(5, 2);
 
             modelBuilder.Entity<Department>(e =>
             {
