@@ -14,7 +14,9 @@ namespace StudentManagement.Models
         public string Email     { get; set; } = string.Empty;
         public DateTime HireDate { get; set; }
 
-        // Navigation
         public ICollection<Course> Courses { get; set; } = new List<Course>();
+
+
+        public ICollection<Department> DepartmentsHeaded { get; set; } = new List<Department>();
     }
 }
