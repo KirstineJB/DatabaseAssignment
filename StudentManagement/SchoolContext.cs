@@ -35,7 +35,7 @@ namespace StudentManagement
                 .HasOne(c => c.Instructor)
                 .WithMany(i => i.Courses)
                 .HasForeignKey(c => c.InstructorId)
-                .OnDelete(DeleteBehavior.SetNull);
+                .OnDelete(DeleteBehavior.SetNull); 
         }
     }
 }
