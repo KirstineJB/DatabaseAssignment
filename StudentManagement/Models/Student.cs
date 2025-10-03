@@ -11,10 +11,10 @@ namespace StudentManagement.Models
         public int Id { get; set; } // PK
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
-        public string MiddleName { get; set; } = string.Empty; //Added
+        public string? MiddleName { get; set; } = string.Empty; //Added
         public string Email { get; set; } = string.Empty;
+        public DateTime? DateOfBirth { get; set; } //Added
         public DateTime EnrollmentDate { get; set; }
-
         public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
     }
 }
