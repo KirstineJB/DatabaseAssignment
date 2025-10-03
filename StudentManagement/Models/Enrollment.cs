@@ -11,7 +11,7 @@ namespace StudentManagement.Models
         public int Id { get; set; } // PK
         public int StudentId { get; set; } // FK
         public int CourseId { get; set; }  // FK
-        public string? Grade { get; set; }
+        public string? FinalGrade { get; set; }   // renamed
 
         public Student? Student { get; set; }
         public Course? Course { get; set; }
