@@ -12,7 +12,8 @@ namespace StudentManagement.Models
         public string Title { get; set; } = string.Empty;
         public int Credits { get; set; }
 
-     
+        public int? InstructorId { get; set; } //Added
+        public Instructor? Instructor { get; set; } //Added
         public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
     }
 }
