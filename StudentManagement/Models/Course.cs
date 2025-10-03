@@ -10,7 +10,7 @@ namespace StudentManagement.Models
     {
         public int Id { get; set; } // PK
         public string Title { get; set; } = string.Empty;
-        public int Credits { get; set; }
+        public decimal Credits { get; set; }  //Ændret
 
         public int? InstructorId { get; set; } //Added
         public Instructor? Instructor { get; set; } //Added
